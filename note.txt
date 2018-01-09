@@ -1,0 +1,35 @@
+8/8/17
+    folder php
+    semua fungsi ditaruh ke fungsi.php
+    fungsi untuk tampil jadwal udah dipindah semua
+
+    -fungsi login dihapus
+    duplicate connect.php
+    
+    alot to do in admin
+
+9/8/17
+    fix connect.php on (include dirname(__FILE__) . '\..\connect.php';)
+
+27/9/17
+    Session start pada head
+    buka librari fungsi pada head.php
+    buat fungsi init
+    buat login
+    login bisa huruf kecil/besar
+
+    fungsi log out
+    
+24/10/17
+    fungsi log out telah di buat
+    tambah asisten buat admin
+    
+    css buat fungsi log out
+    tambahkan auto logout
+    sqlnya belum untuk tambah asisten
+
+26/10/17
+    fungsi buat asisten sudah
+
+27/10/17
+    asisten tidak bisa menghapus yang lain
