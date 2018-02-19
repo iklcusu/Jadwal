@@ -52,7 +52,7 @@
     <?php
         for ($j = 0; $j < 5; $j++)
         {
-            
+
             echo "<td>";
             echo $col[$j];
             echo "</td>";

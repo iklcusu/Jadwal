@@ -5,7 +5,7 @@
 
     -fungsi login dihapus
     duplicate connect.php
-    
+
     alot to do in admin
 
 9/8/17
@@ -19,5 +19,6 @@
     login bisa huruf kecil/besar
 
     fungsi log out
-    
-24/10/17
+
+1/9/18
+    buat 

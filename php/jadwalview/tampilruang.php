@@ -5,7 +5,7 @@
 include dirname(__FILE__) . '\..\connect.php';
 ?>
 
-<div class='col-sm-6 table-title'>
+<div class='col-lg-12 col-xl-6  table-title'>
     <h4><b>
         <?php echo 'Lab ' .  $nama_ruang["nama_ruangan"];?>
     </b></h4>
@@ -37,7 +37,7 @@ include dirname(__FILE__) . '\..\connect.php';
 
             $indexjam = 0;
             while ($row = mysqli_fetch_array($jadwal)) {
-                include 'tampiljam.php';
+                if ($indexjam%2==0) include 'tampiljam.php';
                 $indexjam++;
             }
         ?>

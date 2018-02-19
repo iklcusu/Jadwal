@@ -10,8 +10,6 @@ echo '<body>';
 if (isset($_POST['kode']))
 {
     $sql = "SELECT * FROM `asislab` WHERE kode_asis='$kodeA' and kode_matkul=".$_POST["kode_matkul"]." and grup=".$_POST["kode_grup"].";";
-    echo '<script>console.log("'.$sql.'");</script>';
-    echo '<script>console.log("'.$_POST['kode_grup'].'");</script>';
     echo insertupdate($_POST['kode'],$kodeA,$role);
     unset($_POST['kode']);
 }
@@ -76,10 +74,10 @@ if ($_SESSION['role']==1){
 ?>
                     </select>
                     <select name="kode_grup" id="kode_grup">
-                    <?php
-for ($x = 1; $x <= 6; $x++) {
-    echo "<option value='" . $x . "'>" . $x . "</option>";
-}
+<?php
+  for ($x = 1; $x <= 6; $x++) {
+      echo "<option value='" . $x . "'>" . $x . "</option>";
+  }
 ?>
                     </select>
                     <input type="text" name="kode" class="ambilkode" style="display:none">
@@ -94,12 +92,12 @@ for ($x = 1; $x <= 6; $x++) {
 </div>
 <script>
     $(document).ready(function(){
-        
-        
+
+
         $(".crud-jadwal").click(function(){
             var teks = $(this).attr('id');
             $(".ambilkode").val( teks );
-            
+
             teks = $( this ).html().split(" ");
             $(".kode_matkul").val( teks[0] );
             $(".kode_grup").val( teks[1] );
@@ -110,7 +108,7 @@ for ($x = 1; $x <= 6; $x++) {
             $(".ambilkode").val( teks );
             document.forms["del-form"].submit();
         });
-        
+
         //redundant
         if (<?php echo $role; ?>===0)
         {
